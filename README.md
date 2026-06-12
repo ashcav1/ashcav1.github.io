@@ -1,4 +1,4 @@
-# ashcav1.github.io — Asteroid Research Website
+# ashcav1.github.io
 
 Personal research website for Ashish Cavale — Ph.D. student, Aerospace Engineering
 Sciences, CU Boulder (Celestial & Spaceflight Mechanics Lab).
@@ -15,12 +15,12 @@ Pure static HTML/CSS/JS — no build step, no frameworks, nothing to install.
    ```js
    {
      title:    "Bennu Radial Density Profile",
-     category: "bennu",            // bennu | granular | binary | astro
+     category: "bennu",            // bennu | granular | binary
      type:     "image",            // "image" | "video" | "youtube"
      src:      "assets/gallery/density_profile.png",
      caption:  "One-sentence description shown under the figure.",
      date:     "2026-06",
-     featured: true,               // optional — pins it to the homepage (first 3 featured items shown)
+     featured: true,               // optional — shows on the homepage (first 3 featured items)
    },
    ```
 
@@ -46,15 +46,15 @@ chip appears automatically.
 
 | What | Where |
 |---|---|
-| Research blurbs | `index.html` → `<section id="research">` |
+| Research descriptions | `index.html` → `<section id="research">` |
 | Publications & talks | `index.html` → `<section id="publications">` |
-| Experience timeline | `index.html` → `<section id="experience">` |
+| Bio & education | `index.html` → `<section id="about">` |
 | Colors / fonts / spacing | `css/style.css` → `:root` variables at the top |
 | Starfield density, asteroid shape | `js/starfield.js`, `js/asteroid.js` |
 
 ## CV download
 
-A CV button is intentionally not included yet — your resume PDF contains your phone
+A CV button is intentionally not included yet — the resume PDF contains a phone
 number. To add one: export a phone-free PDF as `assets/Ashish_Cavale_CV.pdf` and add
 next to the contact buttons in `index.html`:
 
@@ -73,12 +73,12 @@ python3 -m http.server 8000
 ## How it's organized
 
 ```
-index.html            main page (hero, research, featured visuals, pubs, experience, about, contact)
+index.html            main page (research, selected figures, publications, about, contact)
 gallery.html          full gallery with category filters + lightbox
 data/gallery-data.js  ← the file you edit to add visuals
 css/style.css         all styling (dark theme variables at top)
 js/starfield.js       animated star background
-js/asteroid.js        procedural rotating rubble pile + moonlet (hero)
+js/asteroid.js        procedural rotating asteroid (hero)
 js/main.js            nav, scroll reveal, gallery rendering, lightbox
 assets/gallery/       your figures and animations live here
 ```

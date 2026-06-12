@@ -15,7 +15,7 @@
           src:      "assets/gallery/density_profile.png",
           caption:  "One-sentence description shown under the figure.",
           date:     "2026-06",
-          featured: true,                        // optional — pins it to the homepage (max 3)
+          featured: true,                        // optional — shows it on the homepage (max 3)
         },
 
       For videos:   type: "video",  src: "assets/gallery/touchdown.mp4"
@@ -30,9 +30,8 @@
 
 const GALLERY_CATEGORIES = {
   bennu:    "Bennu Gravity",
-  granular: "Granular Sims",
+  granular: "Granular Mechanics",
   binary:   "Binary Dynamics",
-  astro:    "Astrophotography",
 };
 
 const GALLERY_ITEMS = [
@@ -41,34 +40,26 @@ const GALLERY_ITEMS = [
     category: "bennu",
     type: "image",
     src: "assets/gallery/placeholder-bennu.svg",
-    caption: "Placeholder — drop in your component density figure from the Icarus paper (e.g. the core + torus + surface layer breakdown).",
+    caption: "Placeholder — replace with a figure from the Bennu density estimation work.",
     date: "2026-06",
     featured: true,
   },
   {
-    title: "LMGC90 Touchdown Simulation",
+    title: "LMGC90 Contact Simulation",
     category: "granular",
     type: "image",
     src: "assets/gallery/placeholder-granular.svg",
-    caption: "Placeholder — swap in an animation of a CubeSat-scale contact on a polyhedral particle bed (mp4/gif works great here).",
+    caption: "Placeholder — replace with an LMGC90 simulation figure or animation.",
     date: "2026-06",
     featured: true,
   },
   {
-    title: "GUBAS Mutual Potential of Didymos–Dimorphos",
+    title: "GUBAS Binary Dynamics",
     category: "binary",
     type: "image",
     src: "assets/gallery/placeholder-binary.svg",
-    caption: "Placeholder — surface gravity / slope maps or libration plots from GUBAS go here.",
+    caption: "Placeholder — replace with GUBAS surface gravity, slope, or libration figures.",
     date: "2026-06",
     featured: true,
-  },
-  {
-    title: "Night Sky over Boulder",
-    category: "astro",
-    type: "image",
-    src: "assets/gallery/placeholder-astro.svg",
-    caption: "Placeholder — your astrophotography lives here too. Asteroids by day, nebulae by night.",
-    date: "2026-06",
   },
 ];

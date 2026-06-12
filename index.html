@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashish Cavale · Asteroid Research</title>
-  <meta name="description" content="Ashish Cavale — Ph.D. researcher at CU Boulder studying the interiors and surfaces of rubble-pile asteroids: Bennu gravity inversion, granular mechanics with LMGC90, and binary asteroid dynamics with GUBAS.">
-  <meta property="og:title" content="Ashish Cavale · Asteroid Research">
-  <meta property="og:description" content="Mapping the hidden interiors of asteroids — Bennu density inversion, low-gravity granular mechanics, and binary asteroid dynamics.">
+  <title>Ashish Cavale</title>
+  <meta name="description" content="Ashish Cavale — Ph.D. student in Aerospace Engineering Sciences at the University of Colorado Boulder. Research on the internal mass distribution and surface mechanics of rubble-pile asteroids.">
+  <meta property="og:title" content="Ashish Cavale">
+  <meta property="og:description" content="Ph.D. student, Aerospace Engineering Sciences, University of Colorado Boulder. Rubble-pile asteroid interiors and surface mechanics.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 
   <header class="site-header">
     <nav class="nav container">
-      <a class="brand" href="index.html"><span class="brand-mark"></span>ashish<span class="brand-dot">.</span>cavale</a>
+      <a class="brand" href="index.html">Ashish Cavale</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -27,9 +27,8 @@
         <li><a href="#research">Research</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#about">About</a></li>
-        <li><a class="nav-cta" href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -38,113 +37,88 @@
     <!-- ============================ HERO ============================ -->
     <section class="hero container" id="home">
       <div class="hero-text">
-        <p class="kicker">// PH.D. RESEARCHER · ASTRODYNAMICS · CU BOULDER</p>
-        <h1>Mapping the hidden<br><span class="gradient-text">interiors of asteroids</span></h1>
+        <h1>Ashish Cavale</h1>
+        <p class="hero-role">Ph.D. Student, Aerospace Engineering Sciences<br>University of Colorado Boulder</p>
         <p class="hero-sub">
-          I'm <strong>Ashish Cavale</strong>, a Ph.D. student in Aerospace Engineering Sciences at the
-          University of Colorado Boulder, working with Prof. Daniel Scheeres in the
-          <a href="https://www.colorado.edu/faculty/scheeres/" target="_blank" rel="noopener">Celestial &amp; Spaceflight Mechanics Laboratory</a>.
-          I figure out what rubble-pile asteroids are made of on the inside — and what happens
-          when a spacecraft dares to touch one.
+          Graduate research assistant in the
+          <a href="https://www.colorado.edu/faculty/scheeres/" target="_blank" rel="noopener">Celestial and Spaceflight Mechanics Laboratory</a>,
+          advised by Prof. Daniel J. Scheeres. My research addresses the internal mass
+          distribution and surface mechanics of rubble-pile asteroids through gravity field
+          estimation, granular mechanics simulation, and binary asteroid dynamics.
         </p>
-        <div class="hero-tags">
-          <span class="tag">(101955) Bennu</span>
-          <span class="tag">OSIRIS-REx</span>
-          <span class="tag">LMGC90</span>
-          <span class="tag">GUBAS</span>
-          <span class="tag">Didymos–Dimorphos</span>
-        </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#research">Explore the research</a>
-          <a class="btn btn-ghost" href="gallery.html">Plots &amp; animations →</a>
+          <a class="btn btn-primary" href="#research">Research</a>
+          <a class="btn btn-ghost" href="gallery.html">Gallery</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
         <canvas id="asteroid-canvas"></canvas>
-        <p class="visual-caption">procedurally generated rubble pile · est. cohesion: negligible</p>
       </div>
     </section>
 
     <!-- ============================ RESEARCH ============================ -->
     <section class="section container" id="research">
-      <p class="kicker reveal">01 // RESEARCH</p>
-      <h2 class="reveal">Three ways to interrogate a rubble pile</h2>
-      <p class="section-lede reveal">
-        Most near-Earth asteroids aren't solid rocks — they're flying piles of gravel, boulders,
-        and dust held together by almost nothing. My research spans their deep interiors, their
-        surfaces, and the binary systems they form.
-      </p>
+      <h2 class="reveal">Research</h2>
 
       <div class="card-grid">
         <article class="card reveal">
-          <div class="card-icon">⬡</div>
-          <span class="status status-review">Under review · Icarus</span>
-          <h3>Peering inside Bennu</h3>
+          <span class="status status-review">Under review — Icarus</span>
+          <h3>Internal Mass Distribution of Bennu</h3>
           <p>
-            OSIRIS-REx delivered the first measured gravity field of a sub-kilometer asteroid.
-            I build heterogeneous density models of (101955) Bennu — superimposed polyhedral
-            components layered onto the shape model — and estimate their densities with an
-            iterative, constrained, covariance-weighted least-squares filter that enforces mass
-            conservation while reproducing the measured gravity coefficients.
+            The OSIRIS-REx mission provided the first measured gravity field of a
+            sub-kilometer asteroid. This work represents (101955) Bennu as a constant-density
+            shape model with a set of superimposed polyhedral components, and estimates
+            component densities using an iterative, constrained, covariance-weighted
+            least-squares formulation that enforces global mass conservation while
+            reproducing the measured gravity coefficients.
           </p>
           <p>
-            The picture that emerges: an under-dense inner core and equatorial torus, balanced by
-            an over-dense subsurface layer — a physically motivated blueprint for how a rubble
-            pile is actually put together.
+            The estimated model produces an under-dense inner core and equatorial torus,
+            balanced by an over-dense subsurface layer, and provides a framework for
+            constructing internal density distributions consistent with the measured
+            gravity field.
           </p>
-          <div class="card-tags">
-            <span>Polyhedral gravity</span><span>Least-squares estimation</span><span>OSIRIS-REx data</span>
-          </div>
         </article>
 
         <article class="card reveal">
-          <div class="card-icon">⛰</div>
-          <span class="status status-active">Active research</span>
-          <h3>Spacecraft meets regolith</h3>
+          <span class="status status-active">Active</span>
+          <h3>Spacecraft–Regolith Interaction</h3>
           <p>
-            Rubble-pile surfaces have surprised every mission that touched one — Bennu's surface
-            swallowed the OSIRIS-REx sampling head tens of centimeters deep. Using
-            <strong>LMGC90</strong>'s non-smooth Contact Dynamics with angular, polyhedral
-            particles, I simulate how landers and instruments mechanically couple to loosely
-            bound, low-gravity regolith — no artificial spring-and-dashpot parameters required.
+            Surface operations at rubble-pile asteroids depend on the mechanical response of
+            loosely bound regolith under very low gravity. This work uses non-smooth Contact
+            Dynamics in LMGC90 with polyhedral particles to simulate spacecraft–surface
+            interaction without the artificial stiffness and damping parameters required by
+            soft-sphere methods.
           </p>
           <p>
-            Touchdown signatures turn out to be diagnostic: penetration depth, contact duration,
-            and rebound encode the cohesion, packing, and friction of the surface they hit.
+            Touchdown observables such as penetration depth, contact duration, and rebound
+            behavior constrain surface properties including cohesion, packing fraction, and
+            friction.
           </p>
-          <div class="card-tags">
-            <span>Non-smooth contact dynamics</span><span>Polyhedral particles</span><span>Low-gravity granular physics</span>
-          </div>
         </article>
 
         <article class="card reveal">
-          <div class="card-icon">◉</div>
-          <span class="status status-future">Building toward</span>
-          <h3>Binary asteroid environments</h3>
+          <span class="status status-future">In development</span>
+          <h3>Binary Asteroid Dynamics</h3>
           <p>
-            With <strong>GUBAS</strong> I model the full two-body gravitational environment of
-            binary systems like Didymos–Dimorphos: the mutual potential, surface gravity and
-            slope, libration, and orbital evolution of two irregular bodies.
+            The General Use Binary Asteroid Simulator (GUBAS) computes the mutual
+            gravitational potential, libration, and orbital evolution of binary systems such
+            as Didymos–Dimorphos.
           </p>
           <p>
-            The goal is a coupled LMGC90–GUBAS framework in which every simulated patch of
-            surface sits in its true gravity and slope field — making landing, sampling, and
-            hopping across the surface of a binary's secondary genuinely predictable, before a
-            mission has to try it.
+            Ongoing work couples GUBAS-derived surface gravity, slope, and descent conditions
+            to LMGC90 surface simulations, so that landing, sampling, and mobility analyses
+            are carried out in a self-consistent binary environment.
           </p>
-          <div class="card-tags">
-            <span>Mutual gravitational potential</span><span>Surface slopes &amp; escape speed</span><span>Coupled simulation</span>
-          </div>
         </article>
       </div>
     </section>
 
-    <!-- ============================ FEATURED VISUALS ============================ -->
+    <!-- ============================ SELECTED FIGURES ============================ -->
     <section class="section container" id="gallery">
-      <p class="kicker reveal">02 // VISUALS</p>
       <div class="section-head reveal">
-        <h2>Featured plots &amp; animations</h2>
-        <a class="btn btn-ghost" href="gallery.html">Full gallery →</a>
+        <h2>Selected Figures</h2>
+        <a class="btn btn-ghost" href="gallery.html">View full gallery</a>
       </div>
       <div class="featured-grid" id="featured-grid">
         <!-- Populated from data/gallery-data.js -->
@@ -153,11 +127,10 @@
 
     <!-- ============================ PUBLICATIONS ============================ -->
     <section class="section container" id="publications">
-      <p class="kicker reveal">03 // PUBLICATIONS &amp; TALKS</p>
-      <h2 class="reveal">On the record</h2>
+      <h2 class="reveal">Publications</h2>
 
       <div class="pub-block reveal">
-        <h3 class="pub-type">Journal</h3>
+        <h3 class="pub-type">Journal Articles</h3>
         <ol class="pub-list">
           <li>
             <span class="pub-title">Constraints on the Internal Mass Distribution of Asteroid (101955) Bennu from OSIRIS-REx Mission Data</span>
@@ -167,7 +140,7 @@
       </div>
 
       <div class="pub-block reveal">
-        <h3 class="pub-type">Conference</h3>
+        <h3 class="pub-type">Conference Presentations</h3>
         <ol class="pub-list">
           <li>
             <span class="pub-title">Heterogeneous Density Distribution of Bennu Using Recent Mission Data and Observations</span>
@@ -185,82 +158,32 @@
       </div>
     </section>
 
-    <!-- ============================ EXPERIENCE ============================ -->
-    <section class="section container" id="experience">
-      <p class="kicker reveal">04 // TRAJECTORY</p>
-      <h2 class="reveal">Flight history</h2>
-      <div class="timeline">
-        <div class="tl-item reveal">
-          <div class="tl-when">2024 — now</div>
-          <div class="tl-what">
-            <h3>Ph.D. + M.S., Aerospace Engineering Sciences · CU Boulder</h3>
-            <p>Graduate Research Assistant, Celestial &amp; Spaceflight Mechanics Lab (advisor: Prof. Daniel Scheeres). Heterogeneous density inversion of Bennu; low-gravity granular mechanics in LMGC90; binary asteroid dynamics in GUBAS.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-when">2024</div>
-          <div class="tl-what">
-            <h3>Draper Laboratory · GN&amp;C Space Applications Intern</h3>
-            <p>Optimal lunar-lander trajectory and pointing solutions for hazard detection; high-fidelity range sensor modeling.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-when">2023</div>
-          <div class="tl-what">
-            <h3>Blue Origin · Fluid Controls &amp; Autonomy Intern</h3>
-            <p>Simulink helium heat-transfer models and hardware-in-the-loop propellant load testing with the New Glenn launch team.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-when">2023</div>
-          <div class="tl-what">
-            <h3>Northrop Grumman · Test Engineering Intern</h3>
-            <p>F-35 avionics troubleshooting; CNC fixture optimization that cut delivery time 75%.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-when">2022</div>
-          <div class="tl-what">
-            <h3>Ball Aerospace · Engineering Intern</h3>
-            <p>Cradle-to-grave high-altitude balloon payload — designed, vacuum/thermal/drop tested, flown, and recovered.</p>
-          </div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-when">2020 — 2024</div>
-          <div class="tl-what">
-            <h3>B.S. Aerospace Engineering · Georgia Tech, Highest Honors</h3>
-            <p>4.0 GPA. Space Systems Design Lab: Lunar Flashlight propulsion AIT, GT-1 CubeSat ops, Kalman-filter state estimation. Plus Hall thruster testing at HPEPL and an STK digital-twin internship at AGI.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ============================ ABOUT ============================ -->
     <section class="section container" id="about">
-      <p class="kicker reveal">05 // ABOUT</p>
-      <h2 class="reveal">When not orbiting a desk</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            I came to asteroids by way of propulsion test stands, CubeSat cleanrooms, and lunar
-            lander GN&amp;C — and stayed because rubble piles are the solar system's strangest
-            engineering material: a flying granular medium where gravity is measured in
-            micro-g's and a footprint can become a crater.
-          </p>
-          <p>
-            Off the clock I'm an astrophotographer (some of those shots live in the
-            <a href="gallery.html">gallery</a>), a tenor in the CU Boulder Chamber Choir, a
-            saxophonist, an FAA-licensed drone pilot, and a ham radio technician. I'll also
-            happily lose to you at golf or tennis.
-          </p>
-        </div>
-        <ul class="about-facts reveal">
-          <li><span>🔭</span> Astrophotography</li>
-          <li><span>🎶</span> CU Chamber Choir · tenor sax</li>
-          <li><span>📡</span> Ham radio technician</li>
-          <li><span>🛩</span> FAA-licensed UAV pilot</li>
-          <li><span>🛠</span> Makerspace trainer (3D printing, laser, wood)</li>
-          <li><span>⛳</span> Golf &amp; tennis</li>
+      <h2 class="reveal">About</h2>
+      <p class="about-bio reveal">
+        Ashish Cavale is a Ph.D. student in Aerospace Engineering Sciences at the University
+        of Colorado Boulder, working in the Celestial and Spaceflight Mechanics Laboratory
+        under Prof. Daniel J. Scheeres. His research focuses on the internal structure of
+        rubble-pile asteroids, constrained by OSIRIS-REx gravity measurements, and on
+        granular mechanics simulations of spacecraft–surface interaction in low-gravity
+        environments.
+      </p>
+      <div class="pub-block reveal">
+        <h3 class="pub-type">Education</h3>
+        <ul class="edu-list">
+          <li>
+            <span class="pub-title">Ph.D., Aerospace Engineering Sciences</span>
+            <span class="pub-meta">University of Colorado Boulder, 2024–present · Advisor: Prof. Daniel J. Scheeres</span>
+          </li>
+          <li>
+            <span class="pub-title">M.S., Aerospace Engineering Sciences</span>
+            <span class="pub-meta">University of Colorado Boulder, 2024–present</span>
+          </li>
+          <li>
+            <span class="pub-title">B.S., Aerospace Engineering</span>
+            <span class="pub-meta">Georgia Institute of Technology, 2020–2024 · Highest Honors</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -268,11 +191,10 @@
     <!-- ============================ CONTACT ============================ -->
     <section class="section container" id="contact">
       <div class="contact-panel reveal">
-        <p class="kicker">06 // CONTACT</p>
-        <h2>Let's talk asteroids</h2>
+        <h2>Contact</h2>
         <p class="section-lede">
-          Collaboration, mission concepts, granular physics arguments, or telescope advice —
-          my inbox is open.
+          Department of Aerospace Engineering Sciences<br>
+          University of Colorado Boulder
         </p>
         <div class="contact-links">
           <a class="btn btn-primary" href="mailto:ashish.cavale@colorado.edu">ashish.cavale@colorado.edu</a>
@@ -285,8 +207,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Ashish Cavale · Built for the love of rubble piles.</p>
-      <p class="footer-coords">40.0150° N, 105.2705° W · Boulder, CO</p>
+      <p>© <span id="year"></span> Ashish Cavale</p>
     </div>
   </footer>
 
