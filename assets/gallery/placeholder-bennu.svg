@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0a0f1c"/>
-  <g stroke="#1c2940" stroke-width="1">
+  <rect width="800" height="500" fill="#1c1916"/>
+  <g stroke="#2e2a24" stroke-width="1">
     <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
   </g>
-  <circle cx="400" cy="250" r="130" fill="none" stroke="#f4a261" stroke-width="2" stroke-dasharray="6 5" opacity="0.8"/>
-  <circle cx="400" cy="250" r="85" fill="none" stroke="#f4a261" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.55"/>
-  <circle cx="400" cy="250" r="40" fill="#f4a261" opacity="0.18"/>
-  <circle cx="400" cy="250" r="40" fill="none" stroke="#f4a261" stroke-width="2"/>
-  <ellipse cx="400" cy="250" rx="170" ry="38" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.6"/>
-  <text x="400" y="80" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="22">BENNU DENSITY MODEL</text>
-  <text x="400" y="445" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="15">placeholder — replace with your figure (assets/gallery/)</text>
+  <circle cx="400" cy="250" r="130" fill="none" stroke="#c98a3d" stroke-width="2" stroke-dasharray="6 5" opacity="0.8"/>
+  <circle cx="400" cy="250" r="85" fill="none" stroke="#c98a3d" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.55"/>
+  <circle cx="400" cy="250" r="40" fill="#c98a3d" opacity="0.15"/>
+  <circle cx="400" cy="250" r="40" fill="none" stroke="#c98a3d" stroke-width="2"/>
+  <ellipse cx="400" cy="250" rx="170" ry="38" fill="none" stroke="#9dbfcf" stroke-width="1.5" opacity="0.6"/>
+  <text x="400" y="80" text-anchor="middle" fill="#e9e2d4" font-family="monospace" font-size="22">BENNU DENSITY MODEL</text>
+  <text x="400" y="445" text-anchor="middle" fill="#a39a88" font-family="monospace" font-size="15">placeholder — replace with your figure (assets/gallery/)</text>
 </svg>

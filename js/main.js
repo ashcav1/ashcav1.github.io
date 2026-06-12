@@ -22,25 +22,6 @@
     );
   }
 
-  // ---------- scroll reveal ----------
-  const revealEls = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window && revealEls.length) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    revealEls.forEach((el) => io.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add("visible"));
-  }
-
   // ---------- gallery helpers ----------
   const items = typeof GALLERY_ITEMS !== "undefined" ? GALLERY_ITEMS : [];
   const cats = typeof GALLERY_CATEGORIES !== "undefined" ? GALLERY_CATEGORIES : {};
@@ -63,7 +44,7 @@
 
   function cardHTML(item, idx) {
     return (
-      '<button class="g-card reveal visible" data-index="' + idx + '" aria-label="Open ' + item.title + '">' +
+      '<button class="g-card" data-index="' + idx + '" aria-label="Open ' + item.title + '">' +
       '<div class="g-thumb">' + thumbHTML(item) +
       '<span class="g-badge">' + (cats[item.category] || item.category) + "</span></div>" +
       '<div class="g-body"><h3>' + item.title + "</h3><p>" + (item.caption || "") + "</p>" +

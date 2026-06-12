@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0a0f1c"/>
-  <g stroke="#1c2940" stroke-width="1">
+  <rect width="800" height="500" fill="#1c1916"/>
+  <g stroke="#2e2a24" stroke-width="1">
     <path d="M0 100h800M0 200h800M0 300h800M0 400h800M100 0v500M200 0v500M300 0v500M400 0v500M500 0v500M600 0v500M700 0v500"/>
   </g>
-  <g fill="none" stroke="#f4a261" stroke-width="1.5" opacity="0.85">
+  <g fill="none" stroke="#c98a3d" stroke-width="1.5" opacity="0.85">
     <polygon points="120,420 160,390 200,415 185,455 135,450"/>
     <polygon points="210,400 260,385 285,420 250,445 215,435"/>
     <polygon points="300,415 340,390 380,410 370,450 315,455"/>
@@ -15,9 +15,9 @@
     <polygon points="330,355 370,340 395,370 365,392 335,380"/>
     <polygon points="520,350 560,338 582,368 552,388 525,375"/>
   </g>
-  <rect x="365" y="160" width="70" height="70" fill="none" stroke="#7dd3fc" stroke-width="2.5"/>
-  <line x1="400" y1="230" x2="400" y2="330" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="7 6"/>
-  <path d="M392 318l8 14 8-14z" fill="#7dd3fc"/>
-  <text x="400" y="80" text-anchor="middle" fill="#e2e8f0" font-family="monospace" font-size="22">LMGC90 CONTACT SIM</text>
-  <text x="400" y="478" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="15">placeholder — replace with your animation (mp4/gif)</text>
+  <rect x="365" y="160" width="70" height="70" fill="none" stroke="#9dbfcf" stroke-width="2.5"/>
+  <line x1="400" y1="230" x2="400" y2="330" stroke="#9dbfcf" stroke-width="1.5" stroke-dasharray="7 6"/>
+  <path d="M392 318l8 14 8-14z" fill="#9dbfcf"/>
+  <text x="400" y="80" text-anchor="middle" fill="#e9e2d4" font-family="monospace" font-size="22">LMGC90 CONTACT SIM</text>
+  <text x="400" y="478" text-anchor="middle" fill="#a39a88" font-family="monospace" font-size="15">placeholder — replace with your animation (mp4/gif)</text>
 </svg>

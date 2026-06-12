@@ -7,10 +7,20 @@ Live at: **https://ashcav1.github.io/**
 
 Pure static HTML/CSS/JS — no build step, no frameworks, nothing to install.
 
-## Adding a new plot or animation (the thing you'll do most)
+## Adding a figure or animation (the easy way)
 
-1. Drop the file into `assets/gallery/` — `.png`, `.jpg`, `.gif`, `.mp4`, `.webm` all work.
-2. Open `data/gallery-data.js` and add an entry to the top of `GALLERY_ITEMS`:
+```sh
+python3 add-figure.py ~/Desktop/my_plot.png
+```
+
+The script copies the file into the site, asks for a title, caption, and category,
+and offers to commit and push. The site updates about a minute after pushing.
+Works with png, jpg, gif, svg, webp, mp4, webm, and mov.
+
+## Adding one manually
+
+1. Drop the file into `assets/gallery/`.
+2. Add an entry to the top of `GALLERY_ITEMS` in `data/gallery-data.js`:
 
    ```js
    {
@@ -24,23 +34,12 @@ Pure static HTML/CSS/JS — no build step, no frameworks, nothing to install.
    },
    ```
 
-3. Push it live:
+3. `git add -A && git commit -m "Add figure" && git push`
 
-   ```sh
-   git add -A && git commit -m "Add new figure" && git push
-   ```
-
-The site updates at https://ashcav1.github.io/ about a minute after pushing.
-
-**Videos:** use `type: "video"` — they autoplay on hover in the grid and play with
-controls in the lightbox. Add a `poster: "assets/gallery/thumb.png"` field for a
-custom thumbnail. Keep mp4s reasonably small (GitHub blocks files >100 MB; aim for <25 MB).
-
-**YouTube:** use `type: "youtube", src: "https://youtu.be/VIDEOID"` — thumbnail is
-fetched automatically and the video embeds in the lightbox. Good for long animations.
-
-**New category:** add a line to `GALLERY_CATEGORIES` in the same file — the filter
-chip appears automatically.
+**Videos** autoplay on hover in the grid and play with controls in the lightbox.
+Keep mp4s reasonably small (aim for <25 MB). **YouTube:** use
+`type: "youtube", src: "https://youtu.be/VIDEOID"`. **New category:** add a line to
+`GALLERY_CATEGORIES` — the filter chip appears automatically.
 
 ## Other common edits
 
@@ -50,16 +49,16 @@ chip appears automatically.
 | Publications & talks | `index.html` → `<section id="publications">` |
 | Bio & education | `index.html` → `<section id="about">` |
 | Colors / fonts / spacing | `css/style.css` → `:root` variables at the top |
-| Starfield density, asteroid shape | `js/starfield.js`, `js/asteroid.js` |
+| Asteroid model (shape, labels, colors) | `js/asteroid.js` |
 
 ## CV download
 
 A CV button is intentionally not included yet — the resume PDF contains a phone
 number. To add one: export a phone-free PDF as `assets/Ashish_Cavale_CV.pdf` and add
-next to the contact buttons in `index.html`:
+a link in the contact section of `index.html`:
 
 ```html
-<a class="btn btn-ghost" href="assets/Ashish_Cavale_CV.pdf" target="_blank">CV (PDF)</a>
+<li><a href="assets/Ashish_Cavale_CV.pdf" target="_blank">CV (PDF)</a></li>
 ```
 
 ## Preview locally
@@ -75,10 +74,10 @@ python3 -m http.server 8000
 ```
 index.html            main page (research, selected figures, publications, about, contact)
 gallery.html          full gallery with category filters + lightbox
-data/gallery-data.js  ← the file you edit to add visuals
-css/style.css         all styling (dark theme variables at top)
-js/starfield.js       animated star background
-js/asteroid.js        procedural rotating asteroid (hero)
-js/main.js            nav, scroll reveal, gallery rendering, lightbox
-assets/gallery/       your figures and animations live here
+add-figure.py         helper script — adds a figure and pushes it live
+data/gallery-data.js  gallery content (edited by add-figure.py, or by hand)
+css/style.css         all styling (theme variables at top)
+js/asteroid.js        Bennu-style asteroid with schematic interior (hero)
+js/main.js            nav, gallery rendering, lightbox
+assets/gallery/       figures and animations live here
 ```

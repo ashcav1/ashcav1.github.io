@@ -11,12 +11,10 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-
   <header class="site-header">
     <nav class="nav container">
       <a class="brand" href="index.html">Ashish Cavale</a>
@@ -48,7 +46,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#research">Research</a>
-          <a class="btn btn-ghost" href="gallery.html">Gallery</a>
+          <a class="btn" href="gallery.html">Gallery</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -58,67 +56,62 @@
 
     <!-- ============================ RESEARCH ============================ -->
     <section class="section container" id="research">
-      <h2 class="reveal">Research</h2>
+      <h2>Research</h2>
 
-      <div class="card-grid">
-        <article class="card reveal">
-          <span class="status status-review">Under review — Icarus</span>
-          <h3>Internal Mass Distribution of Bennu</h3>
-          <p>
-            The OSIRIS-REx mission provided the first measured gravity field of a
-            sub-kilometer asteroid. This work represents (101955) Bennu as a constant-density
-            shape model with a set of superimposed polyhedral components, and estimates
-            component densities using an iterative, constrained, covariance-weighted
-            least-squares formulation that enforces global mass conservation while
-            reproducing the measured gravity coefficients.
-          </p>
-          <p>
-            The estimated model produces an under-dense inner core and equatorial torus,
-            balanced by an over-dense subsurface layer, and provides a framework for
-            constructing internal density distributions consistent with the measured
-            gravity field.
-          </p>
-        </article>
+      <article class="research-item">
+        <h3>Internal Mass Distribution of Bennu <span class="status">[under review — Icarus]</span></h3>
+        <p>
+          The OSIRIS-REx mission provided the first measured gravity field of a
+          sub-kilometer asteroid. This work represents (101955) Bennu as a constant-density
+          shape model with a set of superimposed polyhedral components, and estimates
+          component densities using an iterative, constrained, covariance-weighted
+          least-squares formulation that enforces global mass conservation while
+          reproducing the measured gravity coefficients.
+        </p>
+        <p>
+          The estimated model produces an under-dense inner core and equatorial torus,
+          balanced by an over-dense subsurface layer, and provides a framework for
+          constructing internal density distributions consistent with the measured
+          gravity field.
+        </p>
+      </article>
 
-        <article class="card reveal">
-          <span class="status status-active">Active</span>
-          <h3>Spacecraft–Regolith Interaction</h3>
-          <p>
-            Surface operations at rubble-pile asteroids depend on the mechanical response of
-            loosely bound regolith under very low gravity. This work uses non-smooth Contact
-            Dynamics in LMGC90 with polyhedral particles to simulate spacecraft–surface
-            interaction without the artificial stiffness and damping parameters required by
-            soft-sphere methods.
-          </p>
-          <p>
-            Touchdown observables such as penetration depth, contact duration, and rebound
-            behavior constrain surface properties including cohesion, packing fraction, and
-            friction.
-          </p>
-        </article>
+      <article class="research-item">
+        <h3>Spacecraft–Regolith Interaction <span class="status">[active]</span></h3>
+        <p>
+          Surface operations at rubble-pile asteroids depend on the mechanical response of
+          loosely bound regolith under very low gravity. This work uses non-smooth Contact
+          Dynamics in LMGC90 with polyhedral particles to simulate spacecraft–surface
+          interaction without the artificial stiffness and damping parameters required by
+          soft-sphere methods.
+        </p>
+        <p>
+          Touchdown observables such as penetration depth, contact duration, and rebound
+          behavior constrain surface properties including cohesion, packing fraction, and
+          friction.
+        </p>
+      </article>
 
-        <article class="card reveal">
-          <span class="status status-future">In development</span>
-          <h3>Binary Asteroid Dynamics</h3>
-          <p>
-            The General Use Binary Asteroid Simulator (GUBAS) computes the mutual
-            gravitational potential, libration, and orbital evolution of binary systems such
-            as Didymos–Dimorphos.
-          </p>
-          <p>
-            Ongoing work couples GUBAS-derived surface gravity, slope, and descent conditions
-            to LMGC90 surface simulations, so that landing, sampling, and mobility analyses
-            are carried out in a self-consistent binary environment.
-          </p>
-        </article>
-      </div>
+      <article class="research-item">
+        <h3>Binary Asteroid Dynamics <span class="status">[active]</span></h3>
+        <p>
+          The General Use Binary Asteroid Simulator (GUBAS) computes the mutual
+          gravitational potential, libration, and orbital evolution of binary systems such
+          as Didymos–Dimorphos.
+        </p>
+        <p>
+          Ongoing work couples GUBAS-derived surface gravity, slope, and descent conditions
+          to LMGC90 surface simulations, so that landing, sampling, and mobility analyses
+          are carried out in a self-consistent binary environment.
+        </p>
+      </article>
     </section>
 
     <!-- ============================ SELECTED FIGURES ============================ -->
     <section class="section container" id="gallery">
-      <div class="section-head reveal">
+      <div class="section-head">
         <h2>Selected Figures</h2>
-        <a class="btn btn-ghost" href="gallery.html">View full gallery</a>
+        <a href="gallery.html">View full gallery</a>
       </div>
       <div class="featured-grid" id="featured-grid">
         <!-- Populated from data/gallery-data.js -->
@@ -127,9 +120,9 @@
 
     <!-- ============================ PUBLICATIONS ============================ -->
     <section class="section container" id="publications">
-      <h2 class="reveal">Publications</h2>
+      <h2>Publications</h2>
 
-      <div class="pub-block reveal">
+      <div class="pub-block">
         <h3 class="pub-type">Journal Articles</h3>
         <ol class="pub-list">
           <li>
@@ -139,7 +132,7 @@
         </ol>
       </div>
 
-      <div class="pub-block reveal">
+      <div class="pub-block">
         <h3 class="pub-type">Conference Presentations</h3>
         <ol class="pub-list">
           <li>
@@ -160,8 +153,8 @@
 
     <!-- ============================ ABOUT ============================ -->
     <section class="section container" id="about">
-      <h2 class="reveal">About</h2>
-      <p class="about-bio reveal">
+      <h2>About</h2>
+      <p class="about-bio">
         Ashish Cavale is a Ph.D. student in Aerospace Engineering Sciences at the University
         of Colorado Boulder, working in the Celestial and Spaceflight Mechanics Laboratory
         under Prof. Daniel J. Scheeres. His research focuses on the internal structure of
@@ -169,7 +162,7 @@
         granular mechanics simulations of spacecraft–surface interaction in low-gravity
         environments.
       </p>
-      <div class="pub-block reveal">
+      <div class="pub-block">
         <h3 class="pub-type">Education</h3>
         <ul class="edu-list">
           <li>
@@ -190,18 +183,16 @@
 
     <!-- ============================ CONTACT ============================ -->
     <section class="section container" id="contact">
-      <div class="contact-panel reveal">
-        <h2>Contact</h2>
-        <p class="section-lede">
-          Department of Aerospace Engineering Sciences<br>
-          University of Colorado Boulder
-        </p>
-        <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:ashish.cavale@colorado.edu">ashish.cavale@colorado.edu</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ashishcavale/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn btn-ghost" href="https://github.com/ashcav1" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+      <h2>Contact</h2>
+      <p class="contact-addr">
+        Department of Aerospace Engineering Sciences<br>
+        University of Colorado Boulder
+      </p>
+      <ul class="contact-list">
+        <li><a href="mailto:ashish.cavale@colorado.edu">ashish.cavale@colorado.edu</a></li>
+        <li><a href="https://www.linkedin.com/in/ashishcavale/" target="_blank" rel="noopener">linkedin.com/in/ashishcavale</a></li>
+        <li><a href="https://github.com/ashcav1" target="_blank" rel="noopener">github.com/ashcav1</a></li>
+      </ul>
     </section>
   </main>
 
@@ -212,7 +203,6 @@
   </footer>
 
   <script src="data/gallery-data.js"></script>
-  <script src="js/starfield.js"></script>
   <script src="js/asteroid.js"></script>
   <script src="js/main.js"></script>
 </body>
